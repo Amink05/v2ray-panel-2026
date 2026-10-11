@@ -1,0 +1,30 @@
+# v2ray-panel-2026<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V2Ray Panel</title>
+<style>
+body{background:#101827;color:white;font-family:Arial;text-align:center;padding:25px}
+.box{background:#1e293b;padding:25px;border-radius:15px;max-width:400px;margin:auto}
+input,button{padding:12px;margin:8px;width:90%;border-radius:8px;border:0}
+button{background:#16a34a;color:white;font-size:16px}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>پنل V2Ray</h2>
+<p>ساخت کانفیگ آزمایشی</p>
+<input id="name" placeholder="نام کانفیگ">
+<button onclick="make()">ساخت کانفیگ</button>
+<p id="result"></p>
+</div>
+<script>
+function make(){
+let n=document.getElementById('name').value.trim();
+if(!n){alert('نام را وارد کن');return;}
+document.getElementById('result').innerText='کانفیگ آزمایشی: '+n;
+}
+</script>
+</body>
+</html>
